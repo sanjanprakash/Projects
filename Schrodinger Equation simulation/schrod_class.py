@@ -101,7 +101,7 @@ class Schrodinger(object):
 			old_psi = 1. * self.psi_x
 		self.t = t0
 
-	#Discretisation and solving for each time interval...
+	#Discretization and solving for each time interval...
 	def time_step(self, dt, Nsteps = 1):
 		assert Nsteps >= 0
 		self.dt = dt
