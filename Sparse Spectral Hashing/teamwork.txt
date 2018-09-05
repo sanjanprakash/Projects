@@ -14,7 +14,7 @@
 
     Safwan Mahmood : Feature extraction from cluster of images, necessary pre-processing and integrating it to SPCA
                     resulting in feature vectors for respective images
-    Sanjan Prakash : SPCA construction in detail
+    Sanjan Prakash : SPCA construction in detail. ADA boosting to learn the thresholds to be used for generating Hamming codes                      in an adaptive manner
     Aashish : Mapping of Euclidean space to Hamming space, i.e, constructing DELTA_KJ and further using it in
               implementation of Z(i,j) and generating binary code y(i) for i-th image in dataset
     Vibhas : Implemented calculation of Hamming Distance and also classification, i.e., dataset labeling
@@ -26,7 +26,9 @@
 
     feature_exractor.py : This program is used to extract features for each image.
     It returns feature vectors with 2048 dimensions for each image, which are saved in mylist.csv
-
+    
+    boosting.py : This program learns the thresholds to be used to generate the binary Hamming codes in an adaptive manner.
+    
     main.py : In this program sparsePCA is implemented and it returns the feature vector with reduced dimensions
     from 2048 to 1024, which is saved in n_components.csv. Also this program results in going from the mapping of
     Euclidean to Hamming space and generates a total of 3 files :
