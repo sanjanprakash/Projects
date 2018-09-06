@@ -14,8 +14,8 @@ path = "/home/WIPRO Turbo Internship/Datasets/Spices/"
 
 data,labels = [],[]
 
-#for file_name in glob.glob(path + "*.csv") :
-for file_name in glob.glob("*.csv") :
+for file_name in glob.glob(path + "*.csv") :
+#for file_name in glob.glob("*.csv") :
 	intensity = []
 	lines = 0
 	with open(file_name, "r") as filestream :
