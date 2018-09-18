@@ -37,7 +37,7 @@ for file_name in glob.glob("*.csv") :
 			    	intensity.append(float(currentline[1]))
 		data.append(intensity)
 		file_name = os.path.basename(file_name)
-#		name = file_name[len(path):]		
+		
 		if (file_name[:9] == 'EliteMilk') :
 			content_value.append(reference_values[0])
 		elif (file_name[:12] == 'EliteElaichi') :
